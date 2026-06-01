@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+    transition:0.4s;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.stopwatch-card{
+    width:100%;
+    max-width:450px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.15);
+    text-align:center;
+    transition:0.4s;
+}
+
+#display{
+    font-size:3rem;
+    font-weight:bold;
+    margin:30px 0;
+    letter-spacing:3px;
+}
+
+.buttons{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.btn{
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.dark-mode{
+    background:#121212;
+}
+
+.dark-mode .stopwatch-card{
+    background:#1f1f1f;
+    color:white;
+}
+
+@media(max-width:768px){
+
+    #display{
+        font-size:2rem;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+}
